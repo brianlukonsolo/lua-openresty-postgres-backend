@@ -8,7 +8,7 @@ ENV LUAROCKS_INSTALL='/usr/bin/luarocks install' \
 EXPOSE 8080/tcp
 
 RUN mkdir /app
-COPY app/ /app/
+COPY app /app/
 COPY docker-entrypoint.sh /app
 WORKDIR /app
 
